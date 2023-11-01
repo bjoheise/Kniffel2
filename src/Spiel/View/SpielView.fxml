@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="735.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Spiel.Controller.SpielController">
+   <children>
+      <TextField fx:id="ersterWuerfel" alignment="CENTER" layoutX="77.0" layoutY="30.0" prefHeight="60.0" prefWidth="60.0" text="">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="zweiterWuerfel" alignment="CENTER" layoutX="157.0" layoutY="30.0" onAction="#OnClickZweiterWuerfel" prefHeight="60.0" prefWidth="60.0" text="">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dritterWuerfel" alignment="CENTER" layoutX="237.0" layoutY="30.0" onAction="#OnClickDritterWuerfel" prefHeight="60.0" prefWidth="60.0" text="">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="vierterWuerfel" alignment="CENTER" layoutX="317.0" layoutY="30.0" onAction="#OnClickVierterWuerfel" prefHeight="60.0" prefWidth="60.0" text="">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fuenfterWuerfel" alignment="CENTER" layoutX="397.0" layoutY="30.0" onAction="#OnClickFuenfterWuerfel" prefHeight="60.0" prefWidth="60.0" text="">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldZaehler1" alignment="CENTER" layoutX="223.0" layoutY="174.0" onAction="#onClicktextFieldZaehler1" prefHeight="25.0" prefWidth="26.0" text="1" />
+      <TextField fx:id="textFieldZaehler2" alignment="CENTER" layoutX="255.0" layoutY="174.0" onAction="#onClicktextFieldZaehler2" prefHeight="25.0" prefWidth="26.0" text="2" />
+      <TextField fx:id="textFieldZaehler3" alignment="CENTER" layoutX="287.0" layoutY="174.0" onAction="#onClicktextFieldZaehler3" prefHeight="25.0" prefWidth="26.0" text="3" />
+      <Button fx:id="wuerfeln" layoutX="223.0" layoutY="140.0" mnemonicParsing="false" onAction="#OnClickWuerfeln" prefHeight="25.0" prefWidth="90.0" text="würfeln" />
+      <VBox layoutX="14.0" layoutY="242.0" prefHeight="475.0" prefWidth="110.0">
+         <children>
+            <TextField prefHeight="25.0" prefWidth="110.0" text="1er" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="2er" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="3er" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="4er" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="5er" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="6er" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" text="gesamt" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Bonus 63+" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" text="gesamt oben" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Dreierpasch" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Viererpasch" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Full House" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Kleine Straße" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Große Straße" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Kniffel" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Chance" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" text="gesamt oben" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" text="gesamt unten" />
+            <TextField prefHeight="25.0" prefWidth="60.0" text="Total" />
+         </children>
+      </VBox>
+      <VBox layoutX="124.0" layoutY="242.0" prefHeight="475.0" prefWidth="110.0">
+         <children>
+            <TextField alignment="CENTER" text="Einser zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="Zweier zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="Dreier zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="Vierer zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="Fünfer zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="Sechser zählen" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="plus 35" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="alle Augen zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="alle Augen zählen" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="25 Punkte" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="30 Punkte" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="40 Punkte" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="50 Punkte" />
+            <TextField alignment="CENTER" prefHeight="25.0" prefWidth="60.0" text="alle Augen zählen" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" />
+            <TextField prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: e8e8e8;" />
+            <TextField prefHeight="25.0" prefWidth="60.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="240.0" layoutY="217.0" prefHeight="500.0" prefWidth="70.0">
+         <children>
+            <TextField fx:id="nameSpieler1" alignment="CENTER" text="" />
+            <TextField fx:id="Spieler1_1" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_2" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_3" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_4" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_5" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_6" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_ergebnisZahlen" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_p35" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_gesamtOben" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_dreierP" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_viererP" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_fullHouse" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_kleineStr" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_grosseStr" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_Kniffel" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_Chance" alignment="CENTER" onAction="#OnSpieler1_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_gesamtOben2" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_gesamtUnten" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler1_Total" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="310.0" layoutY="217.0" prefHeight="500.0" prefWidth="70.0">
+         <children>
+            <TextField fx:id="nameSpieler2" alignment="CENTER" text="" />
+            <TextField fx:id="Spieler2_1" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_2" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_3" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_4" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_5" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_6" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_ergebnisZahlen" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_p35" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_gesamtOben" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_dreierP" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_viererP" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_fullHouse" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_kleineStr" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_grosseStr" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_Kniffel" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_Chance" alignment="CENTER" onAction="#OnSpieler2_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_gesamtOben2" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_gesamtUnten" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler2_Total" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="380.0" layoutY="217.0" prefHeight="500.0" prefWidth="70.0">
+         <children>
+            <TextField fx:id="nameSpieler3" alignment="CENTER" text="" />
+            <TextField fx:id="Spieler3_1" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_2" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_3" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_4" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_5" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_6" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_ergebnisZahlen" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_p35" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_gesamtOben" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_dreierP" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_viererP" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_fullHouse" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_kleineStr" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_grosseStr" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_Kniffel" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_Chance" alignment="CENTER" onAction="#OnSpieler3_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_gesamtOben2" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_gesamtUnten" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler3_Total" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="450.0" layoutY="217.0" prefHeight="500.0" prefWidth="70.0">
+         <children>
+            <TextField fx:id="nameSpieler4" alignment="CENTER" text="" />
+            <TextField fx:id="Spieler4_1" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_2" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_3" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_4" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_5" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_6" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_ergebnisZahlen" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_p35" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_gesamtOben" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_dreierP" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_viererP" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_fullHouse" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_kleineStr" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_grosseStr" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_Kniffel" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_Chance" alignment="CENTER" onAction="#OnSpieler4_ergebnisZahlen" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_gesamtOben2" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_gesamtUnten" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="Spieler4_Total" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" />
+         </children>
+      </VBox>
+      <ToggleButton fx:id="wuerfelbut1" layoutX="77.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnClickErsterWuerfel" prefHeight="25.0" prefWidth="60.0" text="neu" />
+      <ToggleButton fx:id="wuerfelbut2" layoutX="157.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnClickZweiterWuerfel" prefHeight="25.0" prefWidth="60.0" text="neu" />
+      <ToggleButton fx:id="wuerfelbut3" layoutX="237.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnClickDritterWuerfel" prefHeight="25.0" prefWidth="60.0" text="neu" />
+      <ToggleButton fx:id="wuerfelbut4" layoutX="317.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnClickVierterWuerfel" prefHeight="25.0" prefWidth="60.0" text="neu" />
+      <ToggleButton fx:id="wuerfelbut5" layoutX="397.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnClickFuenfterWuerfel" prefHeight="25.0" prefWidth="60.0" text="neu" />
+      <TextField fx:id="textFieldRundenZaehler" alignment="CENTER" layoutX="330.0" layoutY="152.0" prefHeight="35.0" prefWidth="35.0" text="" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>

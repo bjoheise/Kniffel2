@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="550.0" styleClass="background" stylesheets="@/Spiel/CSS/CSS.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Spiel.Controller.MainController">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem fx:id="zurStartView" mnemonicParsing="false" onAction="#onZurStartViewOnClick" text="zurück" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="neues Spiel">
+               <items>
+                  <MenuItem fx:id="spielAnlegen" mnemonicParsing="false" onAction="#onSpielAnlegenOnClick" text="starten" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Highscore">
+               <items>
+                  <MenuItem fx:id="zurHighscore" mnemonicParsing="false" onAction="#onZurHighscoreOnClick" text="ansehen" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Info">
+               <items>
+                  <MenuItem fx:id="InfoPopUp" mnemonicParsing="false" onAction="#onInfoPupUpOnClick" text="zeigen" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Beenden">
+               <items>
+                  <MenuItem fx:id="AppBeenden" mnemonicParsing="false" onAction="#onAppBeendenOnClick" text="und Schluss" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
